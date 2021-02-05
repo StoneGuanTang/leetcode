@@ -1,6 +1,7 @@
 package sort;
 
 import java.util.Arrays;
+import java.util.Random;
 
 /**
  * 快速排序
@@ -9,18 +10,18 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-//        int size = 100000000;
-//        int[] array = new int[size];
-//        for (int i = 0; i < size; i++) {
-//            array[i] = new Random().nextInt();
-//        }
+        int size = 100000000;
+        int[] array = new int[size];
+        for (int i = 0; i < size; i++) {
+            array[i] = new Random().nextInt();
+        }
 
-        int[] array = {9, 3, 1, 8, 4, 2, 10};
+//        int[] array = {9, 3, 1, 8, 4, 2, 10};
 
         long start = System.currentTimeMillis();
         sort(array);
         System.out.println("cost：" + (System.currentTimeMillis() - start));
-        Arrays.stream(array).forEach(e -> System.out.print(e + ";"));
+//        Arrays.stream(array).forEach(e -> System.out.print(e + ";"));
     }
 
     public static void sort(int[] array) {
