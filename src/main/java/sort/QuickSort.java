@@ -34,7 +34,7 @@ public class QuickSort {
 
         int pivot = partition(array, start, end);
 
-        sort(array, start, pivot);
+        sort(array, start, pivot -1);
         sort(array, pivot + 1, end);
     }
 
